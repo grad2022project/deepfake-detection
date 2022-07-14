@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>upload video</title>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css"> -->
+    <link href="{{url_for('static',filename='css/main.css')}}" rel = "stylesheet">
+    <link href="{{url_for('static',filename='css/normalize.css')}}" rel = "stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/5b5f01cade.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <div class="banner1">
+
+    <div class="nav"  id = "uv">
+      <input type="checkbox"id="check">
+      <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Deepfake Detection</label >
+        <ul>
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="https://github.com/grad2022project/deepfake-detection">GitHub</a></li>
+          <li><a href="{{url_for('static',filename='templates/About-us.html')}}" >About_Us </a></li>
+         
+        </ul>
+      </div>
+      <div class="hoba">
+
+      <div class="file__upload">
+        <div class="header">
+            <p><i class="fa-solid fa-cloud-arrow-up"></i><span><span>up</span>load</span></p>
+        </div>
+        <form class="body" method="post" action="/predict_video" enctype="multipart/form-data">
+          			<p class="file-upload-wrapper" data-text="Select your file!"><input class="file-upload-field" id="upload" type="file" name="file" autocomplete="off" required  accept=".mp4"></p>
+                <label for="upload">
+                  	<i class="fa fa-file-text-o fa-3x"></i>
+                    <p>
+                        <strong>Drag and drop  </strong>files here<br>or<span> browse</span>  to begin the upload
+                    </p>
+                </label>
+                <br>
+
+            <p class="btn">
+        		    <input class="submt" type="submit" value="Upload">
+        	 </p>
+        </form>
+    </div>
+    </div>
+  </div>
+  <footer class="footer">
+     <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h1>Deepfake Detection</h1>
+        </div>
+        <div class="footer-col">
+             <h4>Contact-Us</h4>
+          <ul>
+           <li><a href="https://github.com/grad2022project/deepfake-detection">GitHub</a></li>
+            <li><a href="mailto:graduationproject2000@gmail.com">Gmail</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="copy">copyrights</h4>
+          <ul class="terms">
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>deepfakedetection.com ™ | © 2022></li>
+          </ul>
+        </div>
+      </div>
+     </div>
+   <!-- </footer>
+   <script src="js/jquery-1.12.4.min.js"></script>
+   <script src="js/main.js"></script> -->
+    <script src="{{url_for('static',filename='js/jquery-1.12.4.min.js')}}"></script>
+   <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+
+  </body>
+</html>
