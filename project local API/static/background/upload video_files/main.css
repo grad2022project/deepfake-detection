@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ *{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  /**background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)),url(../back7.jpg);
+  background-size: cover;
+  background-position: center;*/
+
+}
+.banner video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.banner .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+}
+
+
+.banner .nav{
+  height: 70px;
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 10;
+  position: sticky;
+  top: 0px;
+}
+.banner .nav .logo{
+  color: white;
+  font-size: 35px;
+  line-height: 70px;
+  padding: 0 70px;
+  font-weight: bold;
+
+}
+.banner .nav ul{
+  float: right;
+  margin-right: 20px;
+}
+.banner .nav ul li{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+  position: relative;
+
+}
+.banner .nav ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+
+}
+.banner .nav ul li:hover::after{
+  width: 100%;
+}.banner .nav ul .active:hover{
+  background: none;
+}
+.banner .nav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+
+}
+.banner .nav ul li a.active{
+  background: #009688;
+  transition: 0.5s;
+
+}
+.banner .nav .checkbtn{
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+
+}
+.banner .content {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+
+}
+.banner .content h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+.banner .content .bn form button{
+  width: 400px;
+  padding: 15px 0;
+  text-align: center;
+  padding: 20px;
+  border-radius: 25px;
+
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.span{
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.banner .content .bn .form .form-group .btn1 .btn:hover .span{
+  width: 100%;
+}
+.banner .content .bn .form .form-group .btn1 .btn:hover{
+  border: none;
+}
+/***start upload video***/
+/****main navbaar*****/
+.banner1{
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+
+.banner1 .nav{
+  height: 80px;
+  width: 100%;
+  background: #141E27;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+.banner1 .nav .logo{
+  color: white;
+  font-size: 35px;
+  line-height: 70px;
+  padding: 0 70px;
+  font-weight: bold;
+
+}
+.banner1 .nav ul{
+  float: right;
+  margin-right: 20px;
+}
+.banner1 .nav ul li{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+  position: relative;
+
+}
+.banner1 .nav ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+
+}
+.banner1 .nav ul li:hover::after{
+  width: 100%;
+}.banner1 .nav ul .active:hover{
+  background: none;
+}
+.banner1 .nav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+
+}
+.banner1 .nav ul li a.active{
+  background: #009688;
+  transition: 0.5s;
+
+}
+.banner1 .nav .checkbtn{
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+
+}
+
+
+
+.banner1 .hoba {
+  width: 60%;
+  min-height: 80vh;
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+.banner1 .hoba .file__upload {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    
+}
+
+.banner1 .hoba .file__upload .header {
+    width: 100%;
+    height: 100px;
+    background: #4db6ac;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.banner1 .hoba .file__upload .header p {
+    color: #FFF;
+}
+
+.banner1 .hoba .file__upload .header p i {
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.banner1 .hoba .file__upload .header p span {
+    font-size: 2rem;
+    font-weight: 80;
+}
+
+.banner1 .hoba .file__upload .header p span span {
+    font-weight: 500;
+}
+
+.banner1 .hoba .file__upload .body {
+    background: #FFF;
+    width: 100%;
+    height: calc(110% - 145px);
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size:  50%;
+    background-position:50% 0%;
+    background-repeat: no-repeat;
+
+
+}
+
+.banner1 .hoba .file__upload .body input[type="file"] {
+    display: none;
+}
+
+.banner1 .hoba .file__upload .body i.fa {
+    color: #d3d3d3;
+    margin-bottom: 20px;
+}
+.banner1 .hoba .file__upload .body p  {
+    font-size: 18px;
+}
+.banner1 .hoba .file__upload .body p strong {
+    color: #4db6ac;
+}
+
+.banner1 .hoba .file__upload .body p span {
+    color: #4db6ac;
+    text-decoration: underline;
+}
+.banner1 .hoba .file__upload .body p span:hover {
+    cursor: pointer;
+}
+.banner1 .hoba .file__upload .body .btn input{
+  width: 150px;
+  height: 60px;
+  background: #4db6ac;
+  color: white;
+  margin-top:140px ;
+  margin-left: 5px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 20px;
+
+  
+}
+.banner1 .hoba .file__upload .body .btn input:hover{
+  cursor:pointer;
+  background: #141E27;
+
+}
+
+/*************************************start content display ******************************************/
+
+.banner1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.40)),url(imagebackground.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.banner1 .containerr{
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  min-height:80vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family:  sans-serif;
+}
+.banner1 .containerr h1{
+font-size: 4em;
+font-weight: bold;
+color: white;
+position: relative;
+}
+.banner1 .containerr h1::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #009688;
+  height: 3px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.banner1 .containerr form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.banner1 .containerr form h2{
+  color: white;
+  font-size: 2em;
+}
+
+
+
+
+
+/*****start main footer *******/
+
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col ul{
+  list-style: none;
+}
+.footer{
+  background-color: #141E27;
+    padding: 20px 0;
+}
+.footer-col{
+   width: 33%;
+   padding: 0 5px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h1{
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #009688;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col .copy::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #009688;
+  height: 2px;
+  box-sizing: border-box;
+  width: 100px;
+
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col .terms li{
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************responsive**********************************************/
+
+
+
+@media (max-width: 767px) {
+  .banner1 .containerr h1{
+  font-size: 3em;}
+  .banner1 .containerr form h2{
+  font-size: 2em;}
+  .banner1 .containerr video,.banner1 .containerr img{
+    width: 380px;
+    height: 300px;
+  }
+
+  .banner .nav .logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .banner1 .nav .logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .banner .container h1{
+    font-size: 40px;
+    margin-top: 80px;
+  }
+
+  .banner .container .bn form button{
+      width: 200px;
+      padding: 15px 0;
+      text-align: center;
+
+  }
+  .banner .container .bn form button h2{
+      font-size: 20px;
+
+  }
+  .banner .nav ul li a{
+    font-size: 16px;
+
+  }
+  .banner1 .nav ul li a{
+    font-size: 16px;
+
+  }
+  .banner1 .hoba .file__upload {
+      width: 400px;
+      height: 330px;
+      margin: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,.3);
+  }
+}
+
+@media (max-width: 1080px){
+  .banner1 .containerr h1{
+  font-size: 2em;}
+  .banner1 .containerr form h2{
+  font-size: 1em;}
+  .banner1 .containerr video,.banner1 .containerr img{
+    width: 280px;
+    height: 200px;
+  }
+  .banner .nav .checkbtn{
+    display: block;
+    z-index: 99;
+  }
+  .banner1 .nav .checkbtn{
+    display: block;
+    z-index: 99;
+  }
+  .footer-col{
+    width: 100%;}
+  .banner .container h1{
+    font-size: 40px;
+    margin-top: 80px;
+  }
+
+  .banner .container .bn form button{
+      width: 200px;
+      padding: 15px 0;
+      text-align: center;
+
+  }
+  .banner .nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top:80px;
+    left:-100%;
+    text-align: center;
+    transition:all .5s;
+
+  }
+  .banner .nav ul li{
+    display: block;
+    margin: 50px;
+    line-height: 30px;
+  }
+  .banner .nav ul li a{
+    font-size: 20px;
+
+  }
+  .banner .nav ul li a:hover,.nav ul li a.active{
+    background: none;
+    color: #FFF;
+
+  }
+  .banner1 .nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top:80px;
+    left:-100%;
+    text-align: center;
+    transition:all .5s;
+
+  }
+  .banner1 .nav ul li{
+    display: block;
+    margin: 50px;
+    line-height: 30px;
+  }
+  .banner1 .nav ul li a{
+    font-size: 20px;
+
+  }
+  .banner1 .nav ul li a:hover,.nav ul li a.active{
+    background: none;
+    color: #FFF;
+  }
+  .banner1 .hoba .file__upload {
+      width: 300px;
+      height: 345px;
+      margin: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,.3);
+  }
+  .banner1 .hoba .file__upload .header {
+      width: 100%;
+      height: 120px;
+      background: #4db6ac;
+      padding: 10px;
+
+  }
+  .banner1 .hoba .file__upload .body {
+      background: #FFF;
+      width: 100%;
+      height: calc(100% - 150px);
+
+  }
+
+
+
+  .banner1 .hoba .file__upload .body i.fa {
+      color: #d3d3d3;
+      margin-bottom: 10px;
+  }
+  .banner1 .hoba .file__upload .body p  {
+      font-size: 15px;
+  }
+  .banner1 .hoba .file__upload .body .btn input{
+    width: 120px;
+    height: 40px;
+    background: #4db6ac;
+    color: white;
+    margin-top:10px ;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+
+
+  #check:checked ~ ul{
+    left: 0;
+    z-index: 99;
+
+
+  }
+}
+#uploadvideo{
+  margin-top: -24px;
+  margin-bottom: -30px;
+  width: 220px;
+  height: 200px ;
+
+}
+
