@@ -1,0 +1,1 @@
+Before running the app, in the MainActivity change the website link in the variable String webUrl = "http://70d1-34-91-229-211.ngrok.io"; to the new link.
